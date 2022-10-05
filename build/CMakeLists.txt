@@ -5,7 +5,7 @@ project(Statki)
 
 find_package(SFML REQUIRED system window graphics network audio)
 
-set(SFML_INCLUDE_DIR ../lib/SFML/include)
+
 set(SFML_LIBRARIES sfml-system
         sfml-window
         sfml-graphics
