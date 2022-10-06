@@ -1,24 +1,20 @@
 #include <SFML/Graphics.hpp>
-
+#include "lib/Logic/include/Menu.h"
+#include "lib/Graphic/include/MenuWindow.h"
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
+    std::unique_ptr<MenuWindow> window = std::make_unique<MenuWindow>();
+    while (window->getWindow()->isOpen()) {
         sf::Event event;
-        while (window.pollEvent(event))
+        while (window->getWindow()->pollEvent(event))
         {
             if (event.type == sf::Event::Closed)
-                window.close();
+            {
+                return 0;
+            }
         }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
+        window->getWindow()->clear(sf::Color::White);
+        window->render();
+        window->getWindow()->display();
     }
-
-    return 0;
 }
