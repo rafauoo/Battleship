@@ -18,6 +18,8 @@ set(graphic_lib_dir ../lib/Graphic)
 set(graphic_lib_sources
         ${graphic_lib_dir}/Window.cpp
         ${graphic_lib_dir}/MenuWindow.cpp
+        ${graphic_lib_dir}/Sprite.cpp
+        ${graphic_lib_dir}/Button.cpp
         )
 add_library(graphic-lib ${graphic_lib_sources})
 
@@ -39,6 +41,7 @@ add_library(game-lib ${game_lib_sources})
 set(events_lib_dir ../lib/Events)
 set(events_lib_sources
         ${events_lib_dir}/Event.cpp
+        ${events_lib_dir}/EventQueue.cpp
         )
 add_library(events-lib ${events_lib_sources})
 

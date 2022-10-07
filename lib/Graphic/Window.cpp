@@ -23,4 +23,15 @@ sf::RenderWindow* Window::getWindow() {
     return window.get();
 }
 
+const uint Window::getHeight() {
+    return WINDOW_HEIGHT;
+}
+
+const uint Window::getWidth() {
+    return WINDOW_WIDTH;
+}
+
+std::vector<std::shared_ptr<Sprite>> Window::getSprites() {
+    return sprites;
+}
 

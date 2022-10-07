@@ -129,3 +129,17 @@ build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Game/Game.cpp.o
 build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Graphic/MenuWindow.cpp.o
 build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Graphic/Window.cpp.o
 build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Logic/Menu.cpp.o
+build/.cmake/api/v1/reply/codemodel-v2-f2750c340190d220f85f.json
+build/.cmake/api/v1/reply/index-2022-10-07T22-45-31-0086.json
+build/.cmake/api/v1/reply/target-core-lib-Debug-bfc7b9a8e00c979f9c24.json
+build/.cmake/api/v1/reply/target-events-lib-Debug-b0e872a0adcd3bb17711.json
+build/.cmake/api/v1/reply/target-game-lib-Debug-37d40c7c7079a992f0fa.json
+build/.cmake/api/v1/reply/target-graphic-lib-Debug-72ef2d3d3111a6979433.json
+build/.cmake/api/v1/reply/target-logic-lib-Debug-b8c59536c161b1cd168f.json
+build/.cmake/api/v1/reply/target-statki-Debug-e69efe4b7bcea72d4ab3.json
+build/CMakeFiles/events-lib.dir/home/rafalunix/Statki/lib/Events/EventQueue.cpp.o
+build/CMakeFiles/graphic-lib.dir/home/rafalunix/Statki/lib/Graphic/Button.cpp.o
+build/CMakeFiles/graphic-lib.dir/home/rafalunix/Statki/lib/Graphic/Sprite.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Events/EventQueue.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Graphic/Button.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Graphic/Sprite.cpp.o

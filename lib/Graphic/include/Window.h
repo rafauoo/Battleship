@@ -2,6 +2,7 @@
 #define GRAPHIC_WINDOW_H
 
 #include <SFML/System.hpp>
+#include "Sprite.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <vector>
@@ -24,10 +25,14 @@ class Window
     sf::VideoMode videoMode;
     WindowProperties windowProperties;
     std::vector<std::shared_ptr<Window>> children;
+    std::vector<std::shared_ptr<Sprite>> sprites;
   public:
     std::unique_ptr<sf::RenderWindow> window;
     sf::RenderWindow* getWindow();
     virtual void render()=0;
+    const uint getHeight();
+    const uint getWidth();
+    std::vector<std::shared_ptr<Sprite>> getSprites();
     Window();
     Window(const WindowProperties& windowProperties);
     virtual ~Window();

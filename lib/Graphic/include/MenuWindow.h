@@ -6,6 +6,7 @@
 class MenuWindow: public Window {
   public:
     virtual void render() override;
+    void drawSprites();
 };
 
 #endif
