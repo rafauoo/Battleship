@@ -4,6 +4,8 @@
 #include <memory>
 #include "../../Graphic/include/Window.h"
 #include "../../Graphic/include/MenuWindow.h"
+#include "../../Events/include/Event.h"
+#include "../../Events/include/EventQueue.h"
 class Clock;
 
 class Game {
@@ -13,9 +15,11 @@ class Game {
     void run();
     void redraw();
     void start();
+    void initGraphic();
   protected:
-    std::unique_ptr<MenuWindow> window;
+    std::unique_ptr<Window> window;
     Clock* clock;
+    EventQueue<Event> *eventQueue_;
     bool running = true;
 };
 

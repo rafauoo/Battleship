@@ -11,7 +11,11 @@ Game::Game(unsigned int clockFreq) {
 
 void Game::run() {
     start();
+
     while (running == true) {
+        clock->tick();
+
+
         redraw();
         sf::Event event;
         while (window->getWindow()->pollEvent(event))
@@ -21,6 +25,9 @@ void Game::run() {
                 running = false;
             }
         }
+
+        
+        clock->sleep();
     }
 }
 
@@ -31,5 +38,9 @@ void Game::redraw() {
 }
 
 void Game::start() {
+    initGraphic();
+}
+
+void Game::initGraphic() {
     window = std::make_unique<MenuWindow>();
 }

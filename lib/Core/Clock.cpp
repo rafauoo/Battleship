@@ -1,4 +1,5 @@
 #include "include/Clock.h"
+#include <thread>
 
 class SingletonNotInitializedException {};
 
@@ -19,4 +20,12 @@ Clock *Clock::instance() {
     }
 
     return self_.get();
+}
+
+void Clock::tick() {
+    last_tick_ = std::chrono::steady_clock::now();
+}
+
+void Clock::sleep() {
+    std::this_thread::sleep_for(last_tick_ + interval_ - std::chrono::steady_clock::now());
 }

@@ -19,8 +19,8 @@ struct WindowProperties
 class Window
 {
   protected:
-    const uint WINDOW_HEIGHT = 1000;
-    const uint WINDOW_WIDTH = 1000;
+    const uint WINDOW_HEIGHT = 480;
+    const uint WINDOW_WIDTH = 640;
     sf::VideoMode videoMode;
     WindowProperties windowProperties;
     std::vector<std::shared_ptr<Window>> children;
