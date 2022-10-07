@@ -7,12 +7,14 @@
 class Clock {
     public:
         Clock()=delete;
-        Clock(unsigned int clockFreq);
+        Clock(const Clock&)=delete;
+        Clock operator=(const Clock&)=delete;
         unsigned int getClockFreq();
         static Clock* instance();
-    protected:
-        unsigned int clockFreq;
+        static void initialize(unsigned int frequency);
     private:
+        std::chrono::nanoseconds interval_{};
+        explicit Clock(unsigned int frequency);
         static std::unique_ptr<Clock> self_;
 };
 

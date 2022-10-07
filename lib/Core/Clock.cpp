@@ -2,13 +2,15 @@
 
 class SingletonNotInitializedException {};
 
-Clock::Clock() {}
 
-Clock::Clock(unsigned int clockFreq):
-clockFreq(clockFreq) {}
+Clock::Clock(unsigned int freq) {
+    interval_ = std::chrono::nanoseconds(1000000000) / freq;
+}
 
-unsigned int Clock::getClockFreq() {
-    return clockFreq;
+std::unique_ptr<Clock> Clock::self_ = nullptr;
+
+void Clock::initialize(unsigned int freq) {
+    self_ = std::unique_ptr<Clock>(new Clock(freq));
 }
 
 Clock *Clock::instance() {

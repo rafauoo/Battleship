@@ -50,7 +50,6 @@ set(core_lib_sources
 add_library(core-lib ${core_lib_sources})
 
 # add the executable
-add_executable(statki ../main.cpp)
-target_link_libraries(statki ${SFML_LIBRARIES} graphic-lib logic-lib game-lib events-lib
-sfml-graphics sfml-window sfml-network sfml-audio sfml-system)
+add_executable(statki ../main.cpp ${core_lib_sources} ${graphic_lib_sources} ${logic_lib_sources} ${game_lib_sources} ${events_lib_sources})
+target_link_libraries(statki ${SFML_LIBRARIES} graphic-lib logic-lib game-lib events-lib core-lib)
 

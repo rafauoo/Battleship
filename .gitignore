@@ -115,3 +115,17 @@ build/CMakeFiles/logic-lib.dir/flags.make
 build/CMakeFiles/logic-lib.dir/link.txt
 build/CMakeFiles/logic-lib.dir/progress.make
 build/CMakeFiles/logic-lib.dir/home/rafalunix/Statki/lib/Logic/Menu.cpp.o
+build/CMakeLists.txt
+build/libcore-lib.a
+build/.cmake/api/v1/reply/codemodel-v2-0708d9dc380f1fc0809d.json
+build/.cmake/api/v1/reply/index-2022-10-07T19-54-17-0930.json
+build/.cmake/api/v1/reply/target-statki-Debug-60d2a1b665cba704390d.json
+build/CMakeFiles/core-lib.dir/CXX.includecache
+build/CMakeFiles/core-lib.dir/depend.internal
+build/CMakeFiles/core-lib.dir/home/rafalunix/Statki/lib/Core/Clock.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Core/Clock.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Events/Event.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Game/Game.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Graphic/MenuWindow.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Graphic/Window.cpp.o
+build/CMakeFiles/statki.dir/home/rafalunix/Statki/lib/Logic/Menu.cpp.o
