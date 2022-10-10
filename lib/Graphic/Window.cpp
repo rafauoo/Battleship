@@ -7,7 +7,7 @@ heightOffset(heightOffset), widthOffset(widthOffset) {}
 
 Window::Window() {
     videoMode = sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT);
-    window = std::make_unique<sf::RenderWindow>(videoMode, "Battleshipss", sf::Style::Titlebar);
+    window = std::make_unique<sf::RenderWindow>(videoMode, "Battleshipss", sf::Style::Titlebar | sf::Style::Close);
     window->setKeyRepeatEnabled(false);
     window->setFramerateLimit(60);
     windowProperties.window = window.get();

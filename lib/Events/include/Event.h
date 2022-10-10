@@ -6,20 +6,40 @@ class Event {
     ~Event() = default;
     enum EventType {
         MouseLeftClick = 0,
-        MouseRightClick
+        MouseRightClick,
+        MouseLeftReleased,
+        MouseRightReleased,
+
+        KeyPressed,
+        KeyReleased,
+
+        NullEvent
     };
     EventType type;
 
     struct MousePosInfo {
-        float x;
-        float y;
+        int x;
+        int y;
+    };
+
+    struct KeyInfo {
+        int key;
     };
 
     union info_u {
         MousePosInfo mousePosInfo;
+        KeyInfo keyInfo;
         ~info_u() { }  // DO NOT change this to =default, or else it will stop working (must be '{}')
     } info = {};
 
-    Event(EventType, float, float);
+    // MouseLeftClick, MouseRightClick, MouseLeftReleased, MouseRightReleased
+    Event(EventType, int, int);
+
+    // Key Pressed, Key Released
+    Event(EventType, int);
+
+    // Null Event
+    Event(EventType);
 };
+
 #endif

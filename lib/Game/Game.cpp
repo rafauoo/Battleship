@@ -28,9 +28,10 @@ void Game::run() {
             {
                 if (event.mouseButton.button == 0)
                 {
+                    std::cout << event.mouseButton.x << " " << event.mouseButton.y << std::endl;
                     for (std::shared_ptr<Sprite> spr: window->getSprites()) {
-                        if (event.mouseButton.x > spr->x && event.mouseButton.x < spr->x + spr->scale * 35)
-                            if (event.mouseButton.y > spr->y && event.mouseButton.y < spr->y + spr->scale * 15)
+                        if (event.mouseButton.x > spr->x + spr->scale && event.mouseButton.x < spr->x + spr->scale * 34)
+                            if (event.mouseButton.y > spr->y + spr->scale && event.mouseButton.y < spr->y + spr->scale * 14)
                             {
                                 running = false;
                             }
